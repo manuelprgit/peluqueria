@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lerru Stylo - Barbería Profesional</title>
+    <meta name="description" content="Lerru Stylo - Barbería profesional en Santo Domingo, R.D. Ofrecemos cortes de cabello, arreglo de barba, tratamientos faciales y más.">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="img/logo.png" alt="Lerru Stylo Logo" class="loader-logo">
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Lerru Stylo Logo">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#location">Ubicación</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url('img/1.png');">
+        <div class="container hero-content">
+            <h1 class="hero-title fade-in">LERRU STYLO</h1>
+            <p class="hero-subtitle fade-in">Estilo que impone respeto</p>
+            <a href="#contact" class="btn fade-in">Reserva tu cita</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Nuestros Servicios</h2>
+            </div>
+            <div class="services-container">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="service-title">Corte de Cabello</h3>
+                    <p>Cortes modernos y clásicos adaptados a tu estilo personal, realizados con precisión y técnicas avanzadas.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-beard"></i>
+                    </div>
+                    <h3 class="service-title">Arreglo de Barba</h3>
+                    <p>Perfilado y mantenimiento de barba con productos de alta calidad para un acabado perfecto.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="service-title">Tratamientos Faciales</h3>
+                    <p>Cuidado facial completo con productos exclusivos para mantener tu piel en óptimas condiciones.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Coloración</h3>
+                    <p>Servicios de coloración y decoloración utilizando productos profesionales para un resultado duradero.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="service-title">Cortes para Niños</h3>
+                    <p>Cortes especiales para los más pequeños en un ambiente amigable y divertido.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="service-title">Servicios VIP</h3>
+                    <p>Experiencia completa que incluye corte, barba, facial y más, con atención personalizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Nuestra Galería</h2>
+            </div>
+            <div class="gallery-container fade-in">
+                <div class="gallery-slider">
+                    <div class="gallery-item">
+                        <img src="img/1.png" alt="Corte de cabello" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/2.png" alt="Estilo de barba" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/3.png" alt="Corte moderno" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/4.png" alt="Tratamiento facial" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/5.png" alt="Corte y barba" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/6.png" alt="Estilo completo" class="gallery-img">
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-btn gallery-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery-btn gallery-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Sobre Nosotros</h2>
+            </div>
+            <div class="about-container">
+                <div class="about-img-container fade-in">
+                    <img src="img/logo.png" alt="Lerru Stylo Logo" class="about-img">
+                </div>
+                <div class="about-content fade-in">
+                    <h3>Lerrumieris Arias Encarnación</h3>
+                    <p>Fundada por Lerrumieris Arias Encarnación, Lerru Stylo nació con la visión de ofrecer un servicio de barbería que va más allá del corte tradicional. Nos especializamos en crear estilos únicos que reflejan la personalidad de cada cliente.</p>
+                    <p>Con años de experiencia en el sector, nuestro equipo de profesionales combina técnicas clásicas con tendencias modernas para ofrecer resultados excepcionales.</p>
+                    <p>En Lerru Stylo, no solo ofrecemos servicios de barbería, sino una experiencia completa de cuidado personal en un ambiente exclusivo y confortable.</p>
+                    <p>Nuestra filosofía se basa en la atención personalizada, la calidad en cada detalle y la satisfacción total del cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section parallax-bg" style="background-image: url('img/3.png');">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Ubicación</h2>
+            </div>
+            <div class="location-container">
+                <div class="location-info fade-in">
+                    <h3>Visítanos</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Juan de Morfa #61 esquina Luisa del Castillo, VillaCon, Santo Domingo, R.D.</p>
+                    <p><i class="fas fa-phone"></i> 829-560-2791</p>
+                    <p><i class="fas fa-clock"></i> Lunes a Sábado: 9:00 AM - 8:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Domingo: 10:00 AM - 4:00 PM</p>
+                </div>
+                <div class="location-map fade-in">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.2133227385396!2d-69.9!3d18.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMwJzAwLjAiTiA2OcKwNTQnMDAuMCJX!5e0!3m2!1ses!2sdo!4v1624500000000!5m2!1ses!2sdo" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Contacto</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Ponte en contacto</h3>
+                    <p>Estamos aquí para responder cualquier pregunta que tengas. No dudes en contactarnos.</p>
+                    <p><i class="fas fa-phone"></i> 829-560-2791</p>
+                    <p><i class="fab fa-whatsapp"></i> 829-560-2791</p>
+                    <p><i class="fab fa-instagram"></i> @lerrustylo</p>
+                    <p><i class="fas fa-envelope"></i> info@lerrustylo.com</p>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                        <div class="form-message" style="display: none; margin-top: 15px;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section parallax-bg" style="background-image: url('img/5.png');">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Testimonios</h2>
+            </div>
+            <div class="testimonials-container fade-in">
+                <div class="testimonial-slider">
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <img src="img/1.png" alt="Cliente" class="testimonial-img">
+                            <p class="testimonial-text">"El mejor lugar para cortes de cabello en Santo Domingo. Siempre salgo satisfecho con el resultado y el ambiente es increíble."</p>
+                            <h4 class="testimonial-name">Carlos Rodríguez</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <img src="img/2.png" alt="Cliente" class="testimonial-img">
+                            <p class="testimonial-text">"Profesionales en lo que hacen. Mi barba nunca había lucido tan bien. Recomendado al 100%."</p>
+                            <h4 class="testimonial-name">Miguel Ángel</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-card">
+                            <img src="img/4.png" alt="Cliente" class="testimonial-img">
+                            <p class="testimonial-text">"Excelente servicio, ambiente agradable y los mejores estilos. Lerru Stylo es mi barbería de confianza."</p>
+                            <h4 class="testimonial-name">José Pérez</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonial-btn testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="fade-in">Agenda tu Cita</h2>
+            </div>
+            <div class="appointment-container fade-in">
+                <h3 class="appointment-title">Reserva tu experiencia Lerru Stylo</h3>
+                <p class="appointment-text">Próximamente podrás agendar tu cita directamente desde nuestra página web. Por ahora, contáctanos por WhatsApp o llámanos para reservar tu horario preferido.</p>
+                <a href="https://wa.me/18295602791" class="btn">Reservar por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="Lerru Stylo Logo">
+                    </div>
+                    <p>Barbería profesional que ofrece servicios de alta calidad en un ambiente exclusivo y confortable.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/lerrustylo" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-title">Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#gallery">Galería</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Información de contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Juan de Morfa #61 esquina Luisa del Castillo, VillaCon, Santo Domingo, R.D.</li>
+                        <li><i class="fas fa-phone"></i> 829-560-2791</li>
+                        <li><i class="fas fa-envelope"></i> info@lerrustylo.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Sab: 9:00 AM - 8:00 PM | Dom: 10:00 AM - 4:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Lerru Stylo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/18295602791" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Audio Player -->
+    <div class="audio-player">
+        <button class="audio-control"><i class="fas fa-play"></i></button>
+        <div class="audio-info">Música de ambiente</div>
+        <audio id="background-music" loop>
+            <source src="https://assets.mixkit.co/music/preview/mixkit-hip-hop-02-621.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
