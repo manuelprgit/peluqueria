@@ -183,20 +183,75 @@ document.addEventListener('DOMContentLoaded', function() {
     const audioPlayer = document.querySelector('.audio-player');
     const audioControl = document.querySelector('.audio-control');
     const audioElement = document.getElementById('background-music');
+    const audioInfo = document.querySelector('.audio-info');
     
     if (audioControl && audioElement) {
-        let isPlaying = false;
+        // Verificar si hay una preferencia guardada
+        let isPlaying = localStorage.getItem('music-playing') === 'true';
         
-        audioControl.addEventListener('click', function() {
+        // Función para actualizar el estado del reproductor
+        function updateAudioPlayerState() {
             if (isPlaying) {
-                audioElement.pause();
-                audioControl.innerHTML = '<i class="fas fa-play"></i>';
-                isPlaying = false;
-            } else {
+                audioElement.volume = 0;
                 audioElement.play();
+                
+                // Aumentar gradualmente el volumen para una transición suave
+                let volume = 0;
+                const fadeIn = setInterval(() => {
+                    if (volume < 0.8) {
+                        volume += 0.05;
+                        audioElement.volume = volume;
+                    } else {
+                        audioElement.volume = 0.8;
+                        clearInterval(fadeIn);
+                    }
+                }, 100);
+                
                 audioControl.innerHTML = '<i class="fas fa-pause"></i>';
-                isPlaying = true;
+                audioPlayer.classList.add('playing');
+                audioInfo.textContent = 'Música en reproducción';
+            } else {
+                // Disminuir gradualmente el volumen antes de pausar
+                if (audioElement.volume > 0) {
+                    let volume = audioElement.volume;
+                    const fadeOut = setInterval(() => {
+                        if (volume > 0.05) {
+                            volume -= 0.05;
+                            audioElement.volume = volume;
+                        } else {
+                            audioElement.pause();
+                            audioElement.volume = 0;
+                            clearInterval(fadeOut);
+                        }
+                    }, 100);
+                } else {
+                    audioElement.pause();
+                }
+                
+                audioControl.innerHTML = '<i class="fas fa-play"></i>';
+                audioPlayer.classList.remove('playing');
+                audioInfo.textContent = 'Música de ambiente';
             }
+            
+            // Guardar preferencia del usuario
+            localStorage.setItem('music-playing', isPlaying);
+        }
+        
+        // Inicializar el estado del reproductor
+        updateAudioPlayerState();
+        
+        // Manejar clic en el botón de control
+        audioControl.addEventListener('click', function() {
+            isPlaying = !isPlaying;
+            updateAudioPlayerState();
+        });
+        
+        // Manejar errores de reproducción
+        audioElement.addEventListener('error', function() {
+            console.error('Error al reproducir el audio');
+            audioInfo.textContent = 'Error de reproducción';
+            isPlaying = false;
+            updateAudioPlayerState();
         });
     }
 
